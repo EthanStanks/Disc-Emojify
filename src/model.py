@@ -9,15 +9,20 @@ from keras.preprocessing.sequence import pad_sequences
 from keras.utils import to_categorical
 from keras.models import Sequential
 from keras.layers import Embedding, LSTM, Dense
+import string
+import nltk
+nltk.download('stopwords')
+from nltk.corpus import stopwords
+import re
 
 
 EMBEDDING_DIM = 2000
 NUM_EPOCHS = 15
 BATCH_SIZE = 25
-SKIP_WORDS = [
-    "the", "a", "an", "and", "but", "or", "nor", "for", "so", "yet", "with", "in", "it", "is", "on",
-    "after", "although", "as", "because", "before", "if", "since", "though", "of", "unless", "until", 
-    "when", "while", "where", "whether", "although", "even though"]
+
+SKIP_WORDS = set(stopwords.words('english'))
+SKIP_WORDS = SKIP_WORDS.union(['went','got','want','get',',','?','!','@','#','$','%','^','&','*','(',')','/','.',
+                               '<','>',';',':','\"','[',']','{','}','\\','|','_','=','+', 'made'])
 
 def DataPrep():
     data_folder = 'Disc-Emojify/data/'
@@ -37,7 +42,8 @@ def DataPrep():
         descriptions = row['description'].split(',')
 
         for description in descriptions:
-            words = description.strip().lower().split()
+            words = description.strip().lower()
+            words = re.findall(r'\b\w+\b|[.,;!?]', words)
             tokenized_description = [word for word in words if word not in SKIP_WORDS]
             tokenized_description = ' '.join(tokenized_description)
             tokenized_descriptions.append(tokenized_description)
@@ -71,11 +77,20 @@ def Train(padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_len
 
     return model
 
+def Keywords(message):
+    words = re.findall(r'\b\w+\b|[.,;!?]', message)
+    words = [word for word in words if word not in SKIP_WORDS]
+    return words
+
 def Predict(message, tokenizer, model, unique_emojis, sequence_length):
-        message = message.lower()
-        text_input = tokenizer.texts_to_sequences([message])
-        text_input = pad_sequences(text_input, maxlen=sequence_length)
-        predicted_label = model.predict(text_input)
-        predicted_emoji_index = np.argmax(predicted_label)
-        predicted_emoji = unique_emojis[predicted_emoji_index]
-        return predicted_emoji
+        message = message.strip().lower()
+        keywords = Keywords(message)
+        keyword_emojis = dict()
+        for word in keywords:
+            text_input = tokenizer.texts_to_sequences([word])
+            text_input = pad_sequences(text_input, maxlen=sequence_length)
+            predicted_label = model.predict(text_input)
+            predicted_emoji_index = np.argmax(predicted_label)
+            predicted_emoji = unique_emojis[predicted_emoji_index]
+            keyword_emojis[word] = predicted_emoji
+        return keyword_emojis

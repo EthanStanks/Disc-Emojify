@@ -1,8 +1,9 @@
 import discord
 from discord.ext import commands
 import model
+import re
 
-BOT_KEY = 'bot key here'
+BOT_KEY = 'discord_bot_key'
 padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_length = model.DataPrep()
 emojify = model.Train(padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_length)
 
@@ -23,7 +24,7 @@ async def kill(ctx):
         await bot.close()
 
 listening_channels = {}
-listen_mode = 0 # 0 = none, 1 = respond
+listen_mode = 0 # 0 = none, 1 = respond, 2 = inject, 3 = react
 
 @bot.command()
 async def listen(ctx):
@@ -48,7 +49,17 @@ async def respond(ctx):
     listen_mode = 1
     await ctx.send("Listen mode set: Respond.")
 
-# react and #inject
+@bot.command()
+async def inject(ctx):
+    global listen_mode
+    listen_mode = 2
+    await ctx.send("Listen mode set: Inject.")
+
+@bot.command()
+async def react(ctx):
+    global listen_mode
+    listen_mode = 3
+    await ctx.send("Listen mode set: React.")
 
 @bot.event
 async def on_message(message):
@@ -57,8 +68,25 @@ async def on_message(message):
         if listening_channels[id] != False:
 
             if(listen_mode == 1):
-                emoji = model.Predict(message.content, tokenizer, emojify,unique_emojis, sequence_length)
-                await message.channel.send(emoji)
+                keyword_emojis = model.Predict(message.content, tokenizer, emojify,unique_emojis, sequence_length)
+                respond_emojis = "".join(str(value) for value in keyword_emojis.values())
+                if len(keyword_emojis) > 0:
+                    await message.channel.send(respond_emojis)
+            elif(listen_mode == 2):
+                keyword_emojis = model.Predict(message.content, tokenizer, emojify,unique_emojis, sequence_length)
+                if len(keyword_emojis) > 0:
+                    modified_words = []
+                    words = re.findall(r'\b\w+\b|[.,;!?]', message.content)
+                    for word in words:
+                        if word in keyword_emojis:
+                            modified_words.append(keyword_emojis[word])
+                        else:
+                            modified_words.append(word)
+                    injected_message = " ".join(modified_words)
+                    await message.channel.send(injected_message)
+            elif(listen_mode == 3):
+                pass
+
 
     await bot.process_commands(message)
 
