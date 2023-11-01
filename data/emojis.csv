@@ -48,7 +48,7 @@ description,emoji
 "sleep,sleeping,sleeps,slept",:sleeping:
 "drool,drools,drooling,drooled",:drool:
 "exhausted,exhaust,exhale,exhales,exhaled,exhaling,exhausting",:face_exhaling:
-"dizzy,dizziness",:face_with_spirial_eyes:
+"dizzy,dizziness",:face_with_spiral_eyes:
 "mouth shut,secrete,tell no one,no telling",:zipper_mouth:
 "woozy,drunk,tipsy",:woozy_face:
 "sick,sickness,gross,nasty,nauseated,nausea,nauseating",:sick:
@@ -134,7 +134,7 @@ beared,:bearded_person:
 "princess,princesses,royalty",:princess:
 "prince,princes",:prince:
 "superhero,superheros,hero,heros,marvel,dc,savior,saviors",:superhero:
-"supervillian,supervillians,enemy,enemies",:supervillian:
+"supervillian,supervillians,enemy,enemies",:supervillain:
 "ninja,ninjas",:ninja:
 mrs claus,:mrs_claus:
 "santa,santa claus,christmas,december",:santa:
@@ -152,7 +152,7 @@ pregnant,:pregnant_woman:
 "feeding baby,baby feeding,breast feeding",:person_feeding_baby:
 "deaf,can not hear,did not hear",:deaf_person:
 "facepalming,facepalm,facepalms,faceplamed",:person_facepalming:
-"raising hand,raises hand,raise hand,raised hand",:raising_hand:
+"raising hand,raises hand,raise hand,raised hand",:person_raising_hand:
 "shrug,shrugs,shrugging,shurgged,I do not know,unsure",:shrug:
 "whistle,whistles,whistling,whistled,pout,pouting,pouts,pouted",:person_pouting:
 "haircut,haircuts",:haircut:
@@ -164,9 +164,9 @@ pregnant,:pregnant_woman:
 "walk,walking,walked,walks,walker,walkers",:walking:
 "blind,blinded,blinding,can not see,blinds,probing cane,probing canes",:person_with_probing_cane:
 "kneel,kneeling,kneeled,kneels",:person_kneeling:
-"run,running,runners,runner,runs,ran,fast",:runner:
+"run,running,runners,runner,runs,ran,fast",:person_running:
 "stand,standing,stands,stalker,stalkers,stalking,stalk,stalks",:person_standing:
-"hold hands,holding hands,holds hands,holded hands",:person_holding_hands:
+"hold hands,holding hands,holds hands,holded hands",:people_holding_hands:
 "relationship,relationships,couple,couples,dating",:couple_with_heart:
 "family,families",:family:
 "knot,knots,knotting,knotted",:knot:
@@ -210,7 +210,7 @@ shorts,:shorts:
 "cow,cows",:cow:
 "pig,pigs,piggy",:pig:
 "frog,frogs,froggy,toad,toads",:frog:
-"monkey,monkies,ape,apes",:money:
+"monkey,monkies,ape,apes",:monkey:
 "chicken,chickens,roaster,roasters,hen,hens",:chicken:
 "penguin,penguins",:penguin:
 "bird,birds,birdies",:bird:
@@ -305,7 +305,7 @@ fall,:fallen_leaf:
 "coral,corals",:coral:
 "rock,rocks",:rock:
 "wood,woods,woody,timber,lumber,timbers,lumbers",:wood:
-"bouqet,bouqets",:bouqet:
+"bouqet,bouqets",:bouquet:
 "rose,roses,flower,flowers",:rose:
 "tulips,tulip",:tulip:
 lotus,:lotus:
@@ -633,8 +633,8 @@ dna,:dna:
 "thermometer,thermometers,temperature,temperatures",:thermometer:
 "broom,brooms,clean,cleans,cleaned,cleaning",:broom:
 "plunger,plungers,clog,clogged",:plunger:
-"toliet paper,toliet papers",:roll_of_paper:
-"toliet,toliets,bathroom,bathrooms",:toliet:
+"toilet paper,toilet papers",:roll_of_paper:
+"toilet,toilets,bathroom,bathrooms",:toilet:
 "shower,showers,bath,baths",:shower:
 "soap,soaps",:soap:
 "toothbrush,toothbrushes",:toothbrush:
@@ -660,7 +660,7 @@ dna,:dna:
 "book,books,read,reading,reads,knowledge",:books:
 "link,links,linked,linking",:link:
 "paperclip,paperclips",:paperclip:
-"ruler,rulers,measure,measures,inch,inches,centimeters,centimeter",:straight_rules:
+"ruler,rulers,measure,measures,inch,inches,centimeters,centimeter",:straight_ruler:
 "math,calculate,calculations,calculation,calculated,calculates,calculating",:abacus:
 "scissors,scissor,cut,cuts,cutted,cutting",:scissors:
 "pen,pens,ballpoint,ballpoint pen,ballpoint pens",:pen_ballpoint:
@@ -698,7 +698,7 @@ ten,:keycap_ten:
 female,:female_sign:
 male,:male_sign:
 "flag,flags",:flag_white:
-"red flag,red flags",:triangular_flag_on_post_
+"red flag,red flags",:triangular_flag_on_post:
 "pride,gay",:rainbow_flag:
 "pirate,pirates",:pirate_flag:
 "mexico,mexican",:flag_mx:

@@ -9,11 +9,11 @@ from keras.preprocessing.sequence import pad_sequences
 from keras.utils import to_categorical
 from keras.models import Sequential
 from keras.layers import Embedding, LSTM, Dense
-import string
 import nltk
 nltk.download('stopwords')
 from nltk.corpus import stopwords
 import re
+from sklearn.metrics import mean_absolute_error
 
 
 EMBEDDING_DIM = 2000
@@ -22,11 +22,10 @@ BATCH_SIZE = 25
 
 SKIP_WORDS = set(stopwords.words('english'))
 SKIP_WORDS = SKIP_WORDS.union(['went','got','want','get',',','?','!','@','#','$','%','^','&','*','(',')','/','.',
-                               '<','>',';',':','\"','[',']','{','}','\\','|','_','=','+', 'made'])
+                               '<','>',';',':','\"','[',']','{','}','\\','|','_','=','+', 'made','goes'])
 
 def DataPrep():
-    data_folder = 'Disc-Emojify/data/'
-    output_folder = 'Disc-Emojify/output/'
+    data_folder = 'data/'
     data_file = 'emojis.csv'
     data_path = os.path.join(data_folder, data_file)
 
@@ -70,12 +69,16 @@ def Train(padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_len
     model.add(LSTM(128))
     model.add(Dense(len(unique_emojis), activation='softmax'))
 
-    model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-    model.fit(X_train, y_train, epochs=NUM_EPOCHS, batch_size=BATCH_SIZE, validation_data=(X_test, y_test))
+    model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['acc'])
+    fit = model.fit(X_train, y_train, epochs=NUM_EPOCHS, batch_size=BATCH_SIZE, validation_data=(X_test, y_test))
     loss, accuracy = model.evaluate(X_test, y_test)
     print(f"Test loss: {loss:.4f}, Test accuracy: {accuracy:.4f}")
+    test_mae = mean_absolute_error(y_test, model.predict(X_test))
+    train_mae = mean_absolute_error(y_train, model.predict(X_train))
+    print("Test MAE:", test_mae)
+    print("Train MAE:", train_mae)
 
-    return model
+    return model,fit
 
 def Keywords(message):
     words = re.findall(r'\b\w+\b|[.,;!?]', message)
@@ -94,3 +97,23 @@ def Predict(message, tokenizer, model, unique_emojis, sequence_length):
             predicted_emoji = unique_emojis[predicted_emoji_index]
             keyword_emojis[word] = predicted_emoji
         return keyword_emojis
+
+if __name__ == '__main__':
+    padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_length = DataPrep()
+    emojify,fit = Train(padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_length)
+    output_folder = 'output/'
+    plt.figure(figsize=(8,6))
+    plt.title('Accuracy scores')
+    plt.plot(fit.history['acc'])
+    plt.plot(fit.history['val_acc'])
+    plt.legend(['accuracy', 'val_accuracy'])
+    accuracy_path = os.path.join(output_folder,'AccuracyScore.png')
+    plt.savefig(accuracy_path)
+    plt.figure(figsize=(8,6))
+    plt.title('Loss value')
+    plt.plot(fit.history['loss'])
+    plt.plot(fit.history['val_loss'])
+    plt.legend(['loss', 'val_loss'])
+    loss_path = os.path.join(output_folder,'LossScore.png')
+    plt.savefig(loss_path)
+

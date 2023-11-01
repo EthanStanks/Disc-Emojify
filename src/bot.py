@@ -2,10 +2,12 @@ import discord
 from discord.ext import commands
 import model
 import re
+import mapping
 
-BOT_KEY = 'discord_bot_key'
+
+BOT_KEY = 'bot_key_here'
 padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_length = model.DataPrep()
-emojify = model.Train(padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_length)
+emojify,fit = model.Train(padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_length)
 
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
@@ -61,6 +63,7 @@ async def react(ctx):
     listen_mode = 3
     await ctx.send("Listen mode set: React.")
 
+
 @bot.event
 async def on_message(message):
     id = message.channel.id
@@ -85,7 +88,12 @@ async def on_message(message):
                     injected_message = " ".join(modified_words)
                     await message.channel.send(injected_message)
             elif(listen_mode == 3):
-                pass
+                keyword_emojis = model.Predict(message.content, tokenizer, emojify,unique_emojis, sequence_length)
+                if len(keyword_emojis) > 0:
+                    for keyword in keyword_emojis:
+                        emoji = mapping.get_emoji((keyword_emojis[keyword]))
+                        if emoji: await message.add_reaction(emoji)
+                        else: print("Could not react with: ",keyword_emojis[keyword],emoji)
 
 
     await bot.process_commands(message)
