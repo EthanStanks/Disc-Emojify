@@ -14,18 +14,25 @@ nltk.download('stopwords')
 from nltk.corpus import stopwords
 import re
 from sklearn.metrics import mean_absolute_error
+from keras.layers import Dropout, Dense
+from keras.optimizers import Adam
 
 
 EMBEDDING_DIM = 2000
 NUM_EPOCHS = 15
 BATCH_SIZE = 25
+#LEARNING_RATE = 0.001
+#DROPOUT = 0.7
+#RECURRENT_DROPOUT = 0.5
 
 SKIP_WORDS = set(stopwords.words('english'))
 SKIP_WORDS = SKIP_WORDS.union(['went','got','want','get',',','?','!','@','#','$','%','^','&','*','(',')','/','.',
                                '<','>',';',':','\"','[',']','{','}','\\','|','_','=','+', 'made','goes'])
 
 def DataPrep():
-    data_folder = 'data/'
+    current_directory = os.getcwd()
+    print("Current directory:", current_directory)
+    data_folder = 'Disc-Emojify/data/'
     data_file = 'emojis.csv'
     data_path = os.path.join(data_folder, data_file)
 
@@ -47,6 +54,7 @@ def DataPrep():
             tokenized_description = ' '.join(tokenized_description)
             tokenized_descriptions.append(tokenized_description)
             emoji_labels.append(emoji_to_int[emoji])
+        
     
     # tokenizer
     tokenizer = Tokenizer()
@@ -66,10 +74,15 @@ def Train(padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_len
 
     model = Sequential()
     model.add(Embedding(input_dim=len(tokenizer.word_index) + 1, output_dim=EMBEDDING_DIM, input_length=sequence_length))
-    model.add(LSTM(128))
+    #model.add(Dropout(DROPOUT))
+    model.add(LSTM(128, return_sequences=True))
+    #model.add(Dropout(DROPOUT))
+    model.add(LSTM(56))
     model.add(Dense(len(unique_emojis), activation='softmax'))
 
-    model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['acc'])
+    #optimizer=Adam(learning_rate=LEARNING_RATE)
+    optimizer=Adam()
+    model.compile(loss='categorical_crossentropy', optimizer=optimizer, metrics=['acc'])
     fit = model.fit(X_train, y_train, epochs=NUM_EPOCHS, batch_size=BATCH_SIZE, validation_data=(X_test, y_test))
     loss, accuracy = model.evaluate(X_test, y_test)
     print(f"Test loss: {loss:.4f}, Test accuracy: {accuracy:.4f}")
@@ -101,19 +114,21 @@ def Predict(message, tokenizer, model, unique_emojis, sequence_length):
 if __name__ == '__main__':
     padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_length = DataPrep()
     emojify,fit = Train(padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_length)
-    output_folder = 'output/'
-    plt.figure(figsize=(8,6))
-    plt.title('Accuracy scores')
-    plt.plot(fit.history['acc'])
-    plt.plot(fit.history['val_acc'])
-    plt.legend(['accuracy', 'val_accuracy'])
-    accuracy_path = os.path.join(output_folder,'AccuracyScore.png')
-    plt.savefig(accuracy_path)
-    plt.figure(figsize=(8,6))
-    plt.title('Loss value')
-    plt.plot(fit.history['loss'])
-    plt.plot(fit.history['val_loss'])
-    plt.legend(['loss', 'val_loss'])
-    loss_path = os.path.join(output_folder,'LossScore.png')
-    plt.savefig(loss_path)
+
+    if(True):
+        output_folder = 'Disc-Emojify/output/'
+        plt.figure(figsize=(8,6))
+        plt.title('Accuracy scores')
+        plt.plot(fit.history['acc'])
+        plt.plot(fit.history['val_acc'])
+        plt.legend(['accuracy', 'val_accuracy'])
+        accuracy_path = os.path.join(output_folder,'AccuracyScore.png')
+        plt.savefig(accuracy_path)
+        plt.figure(figsize=(8,6))
+        plt.title('Loss value')
+        plt.plot(fit.history['loss'])
+        plt.plot(fit.history['val_loss'])
+        plt.legend(['loss', 'val_loss'])
+        loss_path = os.path.join(output_folder,'LossScore.png')
+        plt.savefig(loss_path)
 
