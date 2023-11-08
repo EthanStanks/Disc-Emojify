@@ -4,29 +4,34 @@ import model
 import re
 import mapping
 
-
-BOT_KEY = 'bot_key_here'
 padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_length = model.DataPrep()
 emojify,fit = model.Train(padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_length)
 
+BOT_KEY = 'bot_key_here'
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
+listening_channels = {}
+listen_mode = 0 # 0 = none, 1 = respond, 2 = inject, 3 = react
 
 @bot.event
 async def on_ready():
     print("Disc-Emoji is now online.")
 
+    custom_status = discord.Game("with Emojis!")
+    await bot.change_presence(status=discord.Status.online, activity=custom_status)
+
+    for guild in bot.guilds:
+        for channel in guild.text_channels:
+            await channel.send('Disc-Emojify is now online. Use ***!info*** to get started!')
+
 @bot.command()
 async def info(ctx):
-    await ctx.send("```- List of Commands -\n!kill - Sets bot to offline.\n!listen - Activates bot in the channel.\n!respond - Bot will respond to each message with emojis\n!stop - Stops bot from listening in the channel.```")
+    await ctx.send("```- List of Commands -\n!listen - Activates bot in the channel.\n!respond - Bot will respond to each message with emojis\n!inject - Bot will mimic each message with emojis\n!react - Bot will react to each message with emojis\n!stop - Stops bot from listening in the channel.\n!kill - Sets bot to offline.```")
 
 @bot.command()
 async def kill(ctx):
     if ctx.author.guild_permissions.administrator:
         await ctx.send("Disc-Emojify is now offline.")
         await bot.close()
-
-listening_channels = {}
-listen_mode = 0 # 0 = none, 1 = respond, 2 = inject, 3 = react
 
 @bot.command()
 async def listen(ctx):
@@ -94,8 +99,7 @@ async def on_message(message):
                         emoji = mapping.get_emoji((keyword_emojis[keyword]))
                         if emoji: await message.add_reaction(emoji)
                         else: print("Could not react with: ",keyword_emojis[keyword],emoji)
-
-
+                        
     await bot.process_commands(message)
 
 bot.run(BOT_KEY)
