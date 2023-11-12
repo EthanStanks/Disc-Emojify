@@ -19,7 +19,7 @@ from keras.optimizers import Adam
 
 
 EMBEDDING_DIM = 2000
-NUM_EPOCHS = 15
+NUM_EPOCHS = 20
 BATCH_SIZE = 25
 #LEARNING_RATE = 0.001
 #DROPOUT = 0.7
@@ -32,7 +32,8 @@ SKIP_WORDS = SKIP_WORDS.union(['went','got','want','get',',','?','!','@','#','$'
 def DataPrep():
     #current_directory = os.getcwd()
     #print("Current directory:", current_directory)
-    data_folder = 'Disc-Emojify/data/'
+    data_folder = 'data/'
+    #data_folder = 'Disc-Emojify/data/'
     data_file = 'emojis.csv'
     data_path = os.path.join(data_folder, data_file)
     df = pd.read_csv(data_path)
@@ -79,7 +80,7 @@ def Train(padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_len
     optimizer=Adam()
     model.compile(loss='categorical_crossentropy', optimizer=optimizer, metrics=['acc'])
     fit = model.fit(X_train, y_train, epochs=NUM_EPOCHS, batch_size=BATCH_SIZE, validation_data=(X_test, y_test))
-    if(False):
+    if(True):
         loss, accuracy = model.evaluate(X_test, y_test)
         print(f"Test loss: {loss:.4f}, Test accuracy: {accuracy:.4f}")
         test_mae = mean_absolute_error(y_test, model.predict(X_test))
@@ -115,8 +116,9 @@ if __name__ == '__main__':
     padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_length = DataPrep()
     emojify,fit = Train(padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_length)
 
-    if(False):
-        output_folder = 'Disc-Emojify/output/'
+    if(True):
+        #output_folder = 'Disc-Emojify/output/'
+        output_folder = 'output/'
         plt.figure(figsize=(8,6))
         plt.title('Accuracy scores')
         plt.plot(fit.history['acc'])

@@ -1,24 +1,24 @@
 description,emoji
-"smile,smiley,happy,smiles,smiled",:smile:
-"grin,grinning,grins,grinned",:grin:
-"laughing,satisfied,laughs,laugh,laughed",:laughing:
-"teary eyes,hold back tears",:face_holding_back_tears:
-"nervous,sweat,anxious",:sweat_smile:
-"joy,crying laughing,lol",:joy:
-"roll on floor laughing,so funny,lmao",:rofl:
+"smile,smiley,happy,smiles,smiled,emoji,emojis,joy,playful,fun,funny,beam,twinkle,fortunate,favorable,advantageous,opportune,convenient,beneficial,helpful",:smile:
+"grin,grinning,grins,grinned,contented,content,cheerful,cheery,merry,joyful,jovial,jolly,joking,jocular,gleeful,carefree,untroubled,delighted,smiling",:grin:
+"laughing,satisfied,laughs,laugh,laughed,guffaw,chuckle,chortle,cackle,howl,roar,ha ha,tee hee,prank,joke,jest,trick,shenanigans,horeplay,giggle",:laughing:
+"teary eyes,hold back tears,tears,mournful,poignant,sad,sorrowful,watery,weeping,weepy,bawling,blubbering,blubbery,distressed,dolorous,in tears,lachrymose,lamentable,lamenting,moist,pathetic,pitiable,pitiful,sniveling,sobbing,wet,whimpering,woeful",:face_holding_back_tears:
+"nervous,sweat,anxious,highly strung,edgy,tense,excitable,jumpy,skittish,brittle,neurotic,hysterical,timid,timorous,mousy,shy,fearful,frightended,apprehensive,scared,nervy,trepidatious,worried,apprehensive,stressed,agitated,quaking,trembling,stressy,febrile",:sweat_smile:
+"joy,crying laughing,lol,delight,jubilation,triumph,rejoicing,happiness,glee,bliss,thrill,pleasure,enjoyment",:joy:
+"roll on floor laughing,so funny,lmao,amusing,humorous,comic,comical,droll,laughable,chucklesome,hilarious,hysterical,riotous,uproarious,witty,quick-witted,waggish,facetious,jolly,jocular,lighthearted,entertaining,diverting,sparkling,scintillating,silly,priceless",:rofl:
 "smile tear,tear with a smile",:smiling_face_with_tear:
-"blush,blushes,blushing,blushed",:blush:
-"innocent,halo,saint,blessed",:innocent:
-"wink,winks,winking,winked",:wink:
-"relieve,relieves,relieved",:relieved:
-"heart eyes,pretty,beautiful",:heart_eyes:
-"loved,thank you",:smiling_face_with_3_hearts:
-"blow a kiss,heart kiss",:kissing_heart:
-"kiss,kissed,kissing,kisses",:kissing:
-"yum,yummy,delious",:yum:
-"crazy,silly,goofy",:zany_face:
-"serious,what,unsure,question,wonder",:face_with_raised_eyebrow:
-"smart,nerd,geek",:nerd:
+"blush,blushes,blushing,blushed,redden,go pink,go red,turn pink, turn red,flush,color,crimson,tint,burn up,feel shy,feel loved,rosinesss,pinkness,bloom",:blush:
+"innocent,halo,saint,blessed,guiltless,guilt-free,not guilty,blameless,in the clear,unimpeachable,faultless,honorable,honest,upright,upstanding,law-abiding,incorrupt,pure,sinless,virtuous,moral,decent,righteous,upright,wholesome,demure,modest,chaste,virgin,pristine,spotless,naive,trusting,trustful",:innocent:
+"wink,winks,winking,winked,blink,flutter,nictate,nictitate",:wink:
+"relieve,relieves,relieved,alleviate,mitigate,assuage,allay,soothe,soften,palliate,appease,ease,dull,reduce,lessen,diminish,free,save",:relieved:
+"heart eyes,pretty,beautiful,attractive,handsome,good-looking,nice-looking,pleasing,alluring,prepossessing,lovely,charming,delightful,appealing,engaging,winsome,ravishing,gorgeous,heavenly,stunning,arresting,glamorous,irresistible,graceful,elegant,exquisite,aesthetic,magnificent,devine,cute",:heart_eyes:
+"loved,thank you,adore,cherish,worship,idolize,treasure,prize,relish,savor,like,thankful,pleased,glad,grateful,indebted,obliged,obligated,beholden",:smiling_face_with_3_hearts:
+"blow a kiss,heart kiss,air-kiss",:kissing_heart:
+"kiss,kissed,kissing,kisses,peck,smooch,canoodle,neck,pet,snog,buss,osculate,french kiss,soul kiss,x",:kissing:
+"yum,yummy,delicious,delectable,lekker,luscious,scrumptious,tasty,toothsome,appetizing,sweet,juicy,mouthwatering,flavorsome,flavorful,delectable,succulent,luscious,savory,delish,finger licking,exquisite",:yum:
+"crazy,silly,goofy,foolish,stupid,unintelligent,idiotic,brainless,mindless,witless,thoughtless,giddy,pinhead,dopey,insane,deranged,crazed,lunatic,unbalanced,unhinged,unstable,mental,nutty,bonkers,cuckoo,loopy,loony,screwy,wacko,gonzo,weird,wild,bizarre,strange",:zany_face:
+"serious,what,unsure,question,wonder,solemn,earnest,sober,somber,unsmiling,poker-faced,stern,bookish,why,therefore,accordingly,cause,because,inquiry,query,interrogation,examination,quiz,quizzing,doubt,dispute,argument,debate,uncertainty,undoubted,issue,problem,concern",:face_with_raised_eyebrow:
+"smart,nerd,geek,clever,bright,intelligent,sharp,witter,shrewd,astute,apt,able,read,perceptive,percipient,discerning,brainy,savvy,streetwise,genius,dork,dweeb,anorak,spod,poindexter,brilliant,gifted,capable,proficient,educated,learned,academic,bookish,knowledgeable,wise,skill,skillful",:nerd:
 "cool,swag,epic",:sunglasses:
 "disguised,fake,disguise,faking,disguising,faked",:disguised_face:
 "star eyes,amazing,wow",:star_struck:
