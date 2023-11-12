@@ -98,6 +98,7 @@ def Predict(message, tokenizer, model, unique_emojis, sequence_length):
         message = message.strip().lower()
         keywords = Keywords(message)
         keyword_emojis = dict()
+        isPredicted = False
         for word in keywords:
             text_input = tokenizer.texts_to_sequences([word])
             text_input = pad_sequences(text_input, maxlen=sequence_length)
@@ -106,7 +107,9 @@ def Predict(message, tokenizer, model, unique_emojis, sequence_length):
                 predicted_emoji_index = np.argmax(predicted_label)
                 predicted_emoji = unique_emojis[predicted_emoji_index]
                 keyword_emojis[word] = predicted_emoji
-        return keyword_emojis
+                isPredicted = True
+
+        return keyword_emojis, isPredicted
 
 if __name__ == '__main__':
     padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_length = DataPrep()
