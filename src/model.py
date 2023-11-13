@@ -16,8 +16,12 @@ import re
 from sklearn.metrics import mean_absolute_error
 from keras.layers import Dropout, Dense
 from keras.optimizers import Adam
+from wordcloud import WordCloud
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import precision_score, recall_score, f1_score
 
-
+IS_GRAPHING = False
+IS_PRINTING = False
 EMBEDDING_DIM = 2000
 NUM_EPOCHS = 20
 BATCH_SIZE = 25
@@ -30,16 +34,31 @@ SKIP_WORDS = SKIP_WORDS.union(['went','got','want','get',',','?','!','@','#','$'
                                '<','>',';',':','\"','[',']','{','}','\\','|','_','=','+', 'made','goes','really'])
 
 def DataPrep():
-    #current_directory = os.getcwd()
-    #print("Current directory:", current_directory)
     data_folder = 'data/'
-    #data_folder = 'Disc-Emojify/data/'
     data_file = 'emojis.csv'
     data_path = os.path.join(data_folder, data_file)
     df = pd.read_csv(data_path)
 
     unique_emojis = df['emoji'].unique()
     emoji_to_int = {emoji: i for i, emoji in enumerate(unique_emojis)}
+
+    if(IS_GRAPHING):
+        df['description_length'] = df['description'].apply(lambda x: len(x.split(',')))
+        sns.histplot(df['description_length'])
+        plt.title('Distribution of Description Lengths')
+        plt.xlabel('Description Length')
+        plt.ylabel('Count of Emojis with Similar Lengths')
+        plt.savefig(os.path.join('output/','DescriptionLength.png'))
+        plt.close()
+
+        all_descriptions = ' '.join(df['description'])
+        wordcloud = WordCloud(width=800, height=400, background_color='white').generate(all_descriptions)
+        plt.figure(figsize=(10, 5))
+        plt.imshow(wordcloud, interpolation='bilinear')
+        plt.axis('off')
+        plt.title('Word Cloud of Emoji Descriptions')
+        plt.savefig(os.path.join('output/','WordCloud.png'))
+        plt.close()
 
     tokenized_descriptions = []
     emoji_labels = []
@@ -80,7 +99,7 @@ def Train(padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_len
     optimizer=Adam()
     model.compile(loss='categorical_crossentropy', optimizer=optimizer, metrics=['acc'])
     fit = model.fit(X_train, y_train, epochs=NUM_EPOCHS, batch_size=BATCH_SIZE, validation_data=(X_test, y_test))
-    if(True):
+    if(IS_PRINTING):
         loss, accuracy = model.evaluate(X_test, y_test)
         print(f"Test loss: {loss:.4f}, Test accuracy: {accuracy:.4f}")
         test_mae = mean_absolute_error(y_test, model.predict(X_test))
@@ -116,21 +135,28 @@ if __name__ == '__main__':
     padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_length = DataPrep()
     emojify,fit = Train(padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_length)
 
-    if(True):
-        #output_folder = 'Disc-Emojify/output/'
+    if(IS_GRAPHING):
         output_folder = 'output/'
+
         plt.figure(figsize=(8,6))
-        plt.title('Accuracy scores')
-        plt.plot(fit.history['acc'])
-        plt.plot(fit.history['val_acc'])
+        plt.title('Training and Validation Accuracy')
+        plt.plot(fit.history['acc'], label='Training Accuracy')
+        plt.plot(fit.history['val_acc'], label='Validation Accuracy')
         plt.legend(['accuracy', 'val_accuracy'])
+        plt.xlabel('Epochs')
+        plt.ylabel('Accuracy')
         accuracy_path = os.path.join(output_folder,'AccuracyScore.png')
         plt.savefig(accuracy_path)
+        plt.close()
+
         plt.figure(figsize=(8,6))
-        plt.title('Loss value')
-        plt.plot(fit.history['loss'])
-        plt.plot(fit.history['val_loss'])
+        plt.title('Training and Validation Loss')
+        plt.plot(fit.history['loss'], label='Training Loss')
+        plt.plot(fit.history['val_loss'], label='Validation Loss')
         plt.legend(['loss', 'val_loss'])
+        plt.xlabel('Epochs')
+        plt.ylabel('Loss')
         loss_path = os.path.join(output_folder,'LossScore.png')
         plt.savefig(loss_path)
+        plt.close()
 
