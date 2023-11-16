@@ -7,7 +7,7 @@ import mapping
 padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_length = model.DataPrep()
 emojify,fit = model.Train(padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_length)
 
-BOT_KEY = 'discord_bot_key'
+BOT_KEY = 'bot_key'
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 listening_channels = {}
 listen_mode = 0 # 0 = none, 1 = respond, 2 = inject, 3 = react
@@ -27,8 +27,6 @@ async def kill(ctx):
     if ctx.author.guild_permissions.administrator:
         await ctx.send("Disc-Emojify is now offline :robot: :skull:")
         await bot.close()
-    else:
-        await ctx.send("Unauthorized Permission :face_with_raised_eyebrow: Administrator Only :police_officer:")
 
 @bot.command()
 async def stop(ctx):
@@ -102,5 +100,17 @@ async def on_message(message):
                 else:
                     await message.add_reaction(mapping.get_emoji((':x:')))            
     await bot.process_commands(message)
+
+
+@bot.event
+async def on_command_error(ctx, error):
+    if isinstance(error, commands.CommandNotFound):
+        await ctx.send("Invalid command :stop_sign: Use **!info** to see the list of available commands :clipboard:")
+    elif isinstance(error, commands.MissingPermissions):
+        await ctx.send("Unauthorized Permission :face_with_raised_eyebrow: Administrator Only :police_officer:")
+    elif isinstance(error, commands.MissingRequiredArgument):
+        await ctx.send("Missing required arguments :stop_sign: Please check the command usage :pencil:")
+    else:
+        print(f"An error occurred: {error}")
 
 bot.run(BOT_KEY)

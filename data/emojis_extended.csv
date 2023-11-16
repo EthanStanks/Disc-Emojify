@@ -1,0 +1,706 @@
+description,emoji
+"smile,smiley,happy,smiles,smiled,emoji,emojis,joy,playful,fun,funny,beam,twinkle,fortunate,favorable,advantageous,opportune,convenient,beneficial,helpful",:smile:
+"grin,grinning,grins,grinned,contented,content,cheerful,cheery,merry,joyful,jovial,jolly,joking,jocular,gleeful,carefree,untroubled,delighted,smiling",:grin:
+"laughing,satisfied,laughs,laugh,laughed,guffaw,chuckle,chortle,cackle,howl,roar,ha ha,tee hee,prank,joke,jest,trick,shenanigans,horeplay,giggle",:laughing:
+"teary eyes,hold back tears,tears,mournful,poignant,sad,sorrowful,watery,weeping,weepy,bawling,blubbering,blubbery,distressed,dolorous,in tears,lachrymose,lamentable,lamenting,moist,pathetic,pitiable,pitiful,sniveling,sobbing,wet,whimpering,woeful",:face_holding_back_tears:
+"nervous,sweat,anxious,highly strung,edgy,tense,excitable,jumpy,skittish,brittle,neurotic,hysterical,timid,timorous,mousy,shy,fearful,frightended,apprehensive,scared,nervy,trepidatious,worried,apprehensive,stressed,agitated,quaking,trembling,stressy,febrile",:sweat_smile:
+"joy,crying laughing,lol,delight,jubilation,triumph,rejoicing,happiness,glee,bliss,thrill,pleasure,enjoyment",:joy:
+"roll on floor laughing,so funny,lmao,amusing,humorous,comic,comical,droll,laughable,chucklesome,hilarious,hysterical,riotous,uproarious,witty,quick-witted,waggish,facetious,jolly,jocular,lighthearted,entertaining,diverting,sparkling,scintillating,silly,priceless",:rofl:
+"smile tear,tear with a smile",:smiling_face_with_tear:
+"blush,blushes,blushing,blushed,redden,go pink,go red,turn pink, turn red,flush,color,crimson,tint,burn up,feel shy,feel loved,rosinesss,pinkness,bloom",:blush:
+"innocent,halo,saint,blessed,guiltless,guilt-free,not guilty,blameless,in the clear,unimpeachable,faultless,honorable,honest,upright,upstanding,law-abiding,incorrupt,pure,sinless,virtuous,moral,decent,righteous,upright,wholesome,demure,modest,chaste,virgin,pristine,spotless,naive,trusting,trustful",:innocent:
+"wink,winks,winking,winked,blink,flutter,nictate,nictitate",:wink:
+"relieve,relieves,relieved,alleviate,mitigate,assuage,allay,soothe,soften,palliate,appease,ease,dull,reduce,lessen,diminish,free,save",:relieved:
+"heart eyes,pretty,beautiful,attractive,handsome,good-looking,nice-looking,pleasing,alluring,prepossessing,lovely,charming,delightful,appealing,engaging,winsome,ravishing,gorgeous,heavenly,stunning,arresting,glamorous,irresistible,graceful,elegant,exquisite,aesthetic,magnificent,devine,cute",:heart_eyes:
+"loved,thank you,adore,cherish,worship,idolize,treasure,prize,relish,savor,like,thankful,pleased,glad,grateful,indebted,obliged,obligated,beholden",:smiling_face_with_3_hearts:
+"blow a kiss,heart kiss,air-kiss",:kissing_heart:
+"kiss,kissed,kissing,kisses,peck,smooch,canoodle,neck,pet,snog,buss,osculate,french kiss,soul kiss,x",:kissing:
+"yum,yummy,delicious,delectable,lekker,luscious,scrumptious,tasty,toothsome,appetizing,sweet,juicy,mouthwatering,flavorsome,flavorful,delectable,succulent,luscious,savory,delish,finger licking,exquisite",:yum:
+"crazy,silly,goofy,foolish,stupid,unintelligent,idiotic,brainless,mindless,witless,thoughtless,giddy,pinhead,dopey,insane,deranged,crazed,lunatic,unbalanced,unhinged,unstable,mental,nutty,bonkers,cuckoo,loopy,loony,screwy,wacko,gonzo,weird,wild,bizarre,strange",:zany_face:
+"serious,what,unsure,question,wonder,solemn,earnest,sober,somber,unsmiling,poker-faced,stern,bookish,why,therefore,accordingly,cause,because,inquiry,query,interrogation,examination,quiz,quizzing,doubt,dispute,argument,debate,uncertainty,undoubted,issue,problem,concern",:face_with_raised_eyebrow:
+"smart,nerd,geek,clever,bright,intelligent,sharp,witter,shrewd,astute,apt,able,read,perceptive,percipient,discerning,brainy,savvy,streetwise,genius,dork,dweeb,anorak,spod,poindexter,brilliant,gifted,capable,proficient,educated,learned,academic,bookish,knowledgeable,wise,skill,skillful",:nerd:
+"cool,swag,epic,legend,grand,monumental,vast,bombastic,huge,fab,funky,fresh,groovy,lit,gnarly,rad,fabulous,far-out,neat,nifty,boss,excellent,fantastic,hip,sensational,splendid,super,swell,trendy,wild,remarkable,great,terrific,impressive,outstanding,monumental,wonderful,superb,awesome",:sunglasses:
+"disguised,fake,disguise,faking,disguising,faked,impersonate,personate,camouflaged,incognito,unrecongizable,conceal,hide,cover up,mask,veil,cloak,dissemble,falsify,concealment,costume,forgery,hoax,imitation,dummy,lookalike,phoney,knockoff,bogus,pretend,con man,cheater,imposter",:disguised_face:
+"star eyes,amazing,wow,astonishing,astounding,surprising,bewildering,stunning,staggering,exciting,amazeballs,flabbergasting,mind-blowing,unbelieveable,incredible,spectacular,remarkable,awesome,thunderstruck,blown away,bewildered,unreal,best,best ever,first-class,sensational",:star_struck:
+"party,partying,partied,celebrate,celebrating,celebrates,social gathering,social event,function,get-together,celebration,reunion,festivity,jamboree,social,dance,disco,rave,fun,commemorate,praise,glorify,admired,esteemed,acknowledged,prestigious",:partying_face:
+"smirk,smirks,smirking,smirked,sexy,hehe,simper,leer,smicker,smirtle,seductive,desirable,alluring,sensual,slinky,tempting,naughty,stimulating",:smirk:
+"unamused,annoyed,annoying,annoys,irritate,irk,displease,antagonize,infuriate,provoke,aggravate,peeve,rile,difficult,grievous,hard,heavy,laborious,unhumorous,not funny",:unamused:
+"disappointed,depressed,saddened,upset,let down,disheartened,downhearted,cast down,downcast,dispirited,discouraged,despondent,dismayed,crestfallen,distressed,chagrined,disenchanted,disillusioned,displeased,discontented,dissatisfied,frustrated,disgruntled,choked,miffed,gutted",:disappointed:
+"worried,worries,worrying,worry,disturbed,perturbed,troubled,bothered,distressed,concerned,tense,strung out,jumpy,stressed,hassle,hassled,jittery,wired,unquiet,antsy",:worried:
+"confused,confusion,confuses,confusing,demented,bewildered,muddled,addled,befuddled,disoriented,disorientated,unbalanced,unhinged,senile,vague,unclear,indistinct,imprecise,blurred,nebulous,hazy,woolly,foggy,shadowy,dim,imperfect,sketchy,obscure,puzzled,baffled,stumped,dumbfounded,at a loss,clueless",:confused:
+"frown,frowning,frowns,sad,scowl,glare,dislike,unhappy,sorrowful,dejected,regretful,downcast,miserable,downhearted,down,despondent,despairing,disconsolate,desolate,wretched,glum,gloomy,tragic,unfortunate,awful,cheerless,sorry,pitiful,grievous,upsetting,heartbreaking,pathetic",:slight_frown:
+"plead,pleading,pleads,cute,cuteness,beg,begging,begs,begged,entreat,beseech,implore,petition,supplicate,importune,request,call on,adjure,solicit,claim,assert,ask,petition,seek,mooch",:pleading_face:
+"cry,crying,cries,cried,sob,sobbing,sobs,sobbed,upset,weep,shed tears,sob,wail,bawl,howl,snivel,whimper,whine,grieve",:sob:
+"mad,angry,angered,angering,angried,furious,infuriated,fuming,berserk",:angry:
+"rage,raging,pissed off,rages,raged,temper,tantrum,fury,rampage,bad,blowout,hissy,boil,storm,rampage",:rage:
+"hot,spicy,piquant,tangy,peppery,spiced,seasoned,pungent,boiling,baking,scorching,roasting,searing,flaming,parching,ovenlike,sweltering,torrid,sultry,humid,muggy,oppressive,burning,sizzling,steaming,scorching",:hot_face:
+"cold,freeze,chilly,deep-freeze,quick-freeze,freeze-dry,cool,refrigerate,preserve,snowy,icy-cold,glacial,wintry,frosty,frigid,raw,polar,arctic,frozen",:cold_face:
+"scream,screaming,screamed,screams,shocked,shocking,surprised,shriek,screech,yell,howl,shout,bellow,yawp,yelp,squeal,wail,squawk,squall,holler",:scream:
+"scared,fearful,fearing,fears,scary,scares,frighten,panic,terrify,petrify,startle,alarm,shock,horrify,intimidate,daunt,spook,fright",:fearful:
+"hug,hugging,hugs,hugged,embrace,cuddle,squeeze,clasp,clutch,hold onto,cherish,harbor,hold,clinch",:hugging:
+"think,thinking,thinks,thinked,ponder,pondering,ponders,believe,expect,imagine,anticipate,surmise,suppose,guess,conclude,determine,reason,figure,judge,consider,estimate,reflect,contemplate,cogitate,concentrate,visualize",:thinking:
+"salutes,salute,saluting,saluted,greeting,salutation,address,hail,welcome,tribute",:saluting_face:
+"shush,shhh,shushed,shushing,shushes,be quiet,quiet,quiets,quieting,silence,quiet,settle,mute,shut up",:shushing_face:
+"melts,melting,melted,melt,liquefy,thaw,unfreeze,defrost,soften,soft,dissolve,relax,vanish,disappear,evaporate",:melting_face:
+"liar,lies,lied,lie,liars,untruth,falsehood,fib,fabrication,deception,fiction,falseification,falsity,exaggeration,myth,sham,propaganda,fib,fabricate,hoax,trick,deceive,con",:liar:
+"whatever,eyeroll,rolling eyes,regardless,anyway,anyways,however,nevertheless,anyhow",:rolling_eyes:
+"yawn,yawning,yawned,yawns,bored,boredom,boring,weary,tire,fatigue,wear out,bore",:yawning_face:
+"sleep,sleeping,sleeps,slept.nap,doze,rest,siesta,drowse,catnap,beauty sleep,snooze,power nap,slumber,doze",:sleeping:
+"drool,drools,drooling,drooled,salivate,dribble,slaver,slobber,drivel,slabber,spit",:drool:
+"exhausted,exhaust,exhale,exhales,exhaled,exhaling,exhausting,wear out,overtire,overtax,weary,drain,knock out,taxing,finish",:face_exhaling:
+"dizzy,dizziness,giddy,lightheaded,faint,weak,unsteady,shaky,wobbly,off-balance,reeling,staggering,tottering,teetering,dazed",:face_with_spiral_eyes:
+"mouth shut,secret,tell no one,no telling,confidential,top secret,classified,restricted,unrevealed,undisclosed,unpublished,untold,unknown,unofficial,hidden,stealthy,invisible,concealed,covert,sly,sneaky,hush,introvert",:zipper_mouth:
+"woozy,drunk,tipsy,intoxicated,inebriated,drunken,incapable,tippling,toping,lightheaded,faint,dopey",:woozy_face:
+"sick,sickness,gross,nasty,nauseated,nausea,nauseating,ill,unwell,off,nauseous,queasy,green,carsick,airsick,barfy",:sick:
+"vomit,vomiting,vomited,throw up,throwing up,puke,puking,puked,pukes,threw up,be sick,spew,heave,retch,gag,get sick,chuck up,hurl,vom,purge,eject,spout,belch,barf",:face_vomiting:
+"sneeze,sneezes,sneezed,sneezing,tissue,blow nose",:sneeze:
+"injured,injury,injuring,ouch,head ache,hurt,hurting,hurts,hurted,wound,bruise,cut,gash,tear,slash,scratch,graze,sore,trauma,harm,wounding,damage,pain,suffering,abuse",:head_bandage:
+"rich,wealthy,riches,wealth,millionare,billionare,affluent,moneyed,cash rich,prosperous,opulent,minted,luxury,deluxe,lavish,costly,expensive,fancy,classy",:money_mouth:
+"cowboy,cowboys,yee haw,wild west,cattleman,cowhand,cownman,cowherd,herder,herdsman,stockman,rancher,cowpoke,herd",:cowboy:
+"evil,flirt,flirting,flirts,bad,tease,lead on,woo,pull,chat up,chirp,wicked,wrongful,sinful,unholy,foul,vile,shady,harmful,filthy",:smiling_imp:
+"clown,clowning,clowns,circus,buffoon,comedian,comic,fool,jester,mime,prankster,antic,cutup,dolt,gagman,gagster,humorist,joker,jokester,mummer,wit,funnyperson",:clown:
+"poop,pooped,poops,pooping,shit,shits,shitting,shitted,shart,sharting,sharts,sharted,stinks,stinky",:poop:
+"ghost,spooky,spooked,spooks,horror,terror,fear,fright,panic,dread,rascal,eerie,sinister,ghostly,uncanny,weird,unearthly,mysterious,frightening,spine-chilling,hair-raising,scaring,terrifying,petrifying,chilling,creepy,scary,spine-tingling",:ghost:
+"skull,skulls,dead,grave,skeleton,die,dying,died,deceased,expired,departed,gone,no more,late,lost,perished,slain,slaughtered,killed,murdered,lifeless,extinct,numb,deadened,paralyzed,useless",:skull:
+"alien,space ship,extraterrestrial,et,martian,venutian,jovian",:alien:
+"robot,terminator,ai,artificial intelligence,disc-emojify,automation,android,machanoid,machine,golem,bot,droid",:robot:
+"pumpkin,jack o lantern,halloween,pumpkins,jack o lanterns, jack-o-lantern,october",:jack_o_lantern:
+"love,loving,fondess,tenderness,warmth,intimacy,attachment,endearment,devotion,adoration,doting,idolization,worship,passion,ardor,desire,lust,care,caring,charity,goodwill,sympathy,kind,romance,affair",:heart_hands:
+"praise,praising,praised,praises,commend,compliment,congratulate,celebrate,admire,cheer,flatter,honor,glorify,hallow,bless,magnify",:raised_hands:
+"clap,clapped,claps,clapping,applaud,cheer",:clap:
+"handshake,handshakes,handshaking,deal,make a deal,trade in,sell,vend,supply,stock,offer,market,merchandise,manage",:handshake:
+"thumbs up,ok,okay,alright,all right,right,very well,yes,very good,fine,agreed,oke,okey-dokey,okey-doke,roger,satisfactory,fine,acceptable,accept,well",:thumbsup:
+"thumbs down,no,of course not,not,negative,never,nae,nah,nope,no way",:thumbsdown:
+"punch,punching,punches,punched,fight,fighting,fights,fighted,hit,strike,knock,thump,jab,cuff,clip,smash,slam,welt,batter,thrash,pound,pummel,drub,slug,clobber,whack,poke,dong,deck,brawl",:punch:
+"fingers crossed,good luck,hope,wish me luck,hoping,hoped,hopes,aspiration,desire,wish,expectation,ambition,aim,plan,dream,daydreaming,pipe dream,longing,yearning,craving,hankering,optimism,promise,belief,faith,trust",:fingers_crossed:
+"peace out,goodbye,peace,farewell,adieu,hooray,au revoir,ciao,adios,bye,bye-bye,so long,see you,see you later,cheers,cheerio,ta-ta,later,laters",:v:
+"rock and roll,heavy metal,rock out,jamming",:metal:
+"pinch,pinching,pinches,pinched,small,nip,tweak,squeeze,compress,grasp,little,small-scale,compact,tiny,miniature,mini",:pinching_hand:
+"hand,hands,raise hand,raises hand,feel,felt,touch,touching,touches,touched,feels,palm,tap,pat,nudge",:raised_hand:
+"yolo,call me,ask,summon,request,order,call",:call_me:
+"hand wave,waved,gesture,signal,sign,wag,waggle,swing,shake,swish,sweep,swipe",:wave:
+"write,writer,wrtiting,writen,write down,put down,set down,inscribe,scribble,communicate,compose,draft,create,invent,think up,draw up,formulate,compile,put together,pen",:writing_hand:
+"pray,praying,prayed",:pray:
+"point,finger",:index_pointing_at_the_viewer:
+"foot,feet",:foot:
+"leg,legs",:leg:
+"workout,strong,muscle,muscles,working out,drill,warm-up,exercises,exercise,aerobics,gymnastic",:muscle:
+"lipstick,lipsticks",:lipstick:
+"lips,mouth,lip",:lips:
+"tooth,teeth,dentist",:tooth:
+"tongue,tongues",:tongue:
+"ear,ears,hear,hearing,heard,hears,listen,listens,listening,listened",:ear:
+hearing aid,:ear_with_hearing_aid:
+"nose,noses,smell,smelled,smelling,smells",:nose:
+"eye,eyeball,eyeballs",:eye:
+"eyes,seeing,watching,see,sees,watch,watches,watched,sight,look,looking,looks,looked",:eyes:
+"lungs,lung,breath,breathing,breaths",:lungs:
+"brain,brainy,head",:brain:
+"speak,speaking,speaks,talk,talking,talked,talks,speaks",:speaking_head:
+"baby,babies",:baby:
+"child,children,childs,kid,kids,young",:child:
+"girl,girls",:girl:
+"boy,boys",:boy:
+"adult,adults,adulting,person",:adult:
+"man,men,mens,guy,guys,dude,dudes,boyfriend,boyfriends",:man:
+"woman,women,lady,ladies,girlfriend,girlfriends",:woman:
+"bald,balding",:person_bald:
+beared,:bearded_person:
+"old,old person",:older_adult:
+"headscarf,headscarfs",:woman_with_headscarf:
+"turban,turbans",:person_wearing_turban:
+"police,cop,police officer,cops,officer,officers,police officers",:cop:
+"construction,construction worker,construction workers",:construction_worker:
+"guard,guarded,guarding",:guard:
+"spy,spying,spies,sleuth,detective,detectives,sleuths",:spy:
+"health worker,health workers,nurse,nursers,doctor,doctors,medical field",:health_worker:
+"farmer,farm,farming,farmers",:farmer:
+"cook,cooking,cooks,chef,chefs,cooked",:cook:
+"student,students,school,schooling,learn,learning,graduate,graduating,graduated,graduates,learned,learns",:student:
+"singers,singer,performer,performers",:singer:
+"teach,teacher,teachers,instructor,instructors,professor,professors",:teacher:
+"factory worker,factory workers",:factory_worker:
+"technologist,technologists,programmer,programmers,developer,developers,video gamer,video gamers",:technologist:
+"office worker,office workers,9 to 5,job,jobs,manager,managers,boss,bosses,ceo,ceos",:office_worker:
+"mechanic,mechanics,auto repair,auto repairs,car guy,car guys,engineer,engineers",:mechanic:
+"scientist,scientists,hypothesis,science,sciences",:scientist:
+"artist,artists,designer,designers,painter,painters,art,arts",:artist:
+"fire fighter,fire fighters",:firefighter:
+"pilot,pilots,captain,captains,cock pit",:pilot:
+"astronaut,astronauts,nasa,space explorer,space explorers",:astronaut:
+"judge,judges,court,courts,court case,court cases,legal,lawyer,lawyers,divorce,divorces",:judge:
+"bride,brides,wife,fiancee,marriage,marriages,wedding,weddings",:bride_with_veil:
+"tuxedo,tuxedos,husband,husbands,groom,grooms,formal,formals,suit,suits,fiance",:man_in_tuxedo:
+"princess,princesses,royalty",:princess:
+"prince,princes",:prince:
+"superhero,superheros,hero,heros,marvel,dc,savior,saviors",:superhero:
+"supervillian,supervillians,enemy,enemies",:supervillain:
+"ninja,ninjas",:ninja:
+mrs claus,:mrs_claus:
+"santa,santa claus,christmas,december",:santa:
+"mage,mages,witch,witches",:woman_mage:
+"wizard,wizards,sorcerers,sorcerer,warlock,warlocks,magic",:man_mage:
+"elf,elves",:elf:
+"troll,trolls,ogers,orger,ugly,goblin,golbins",:troll:
+"vampire,vampires,dracula",:vampire:
+"zombie,zombies,monster,monsters",:zombie:
+"genie,genies",:genie:
+"merperson,merpersons,mermaid,mermaids,mermans,merman",:merperson:
+"fairy,fairies,pixie,pixies",:fairy:
+"angel,angels,heaven,after life",:angel:
+pregnant,:pregnant_woman:
+"feeding baby,baby feeding,breast feeding",:person_feeding_baby:
+"deaf,can not hear,did not hear",:deaf_person:
+"facepalming,facepalm,facepalms,faceplamed",:person_facepalming:
+"raising hand,raises hand,raise hand,raised hand",:person_raising_hand:
+"shrug,shrugs,shrugging,shurgged,I do not know,unsure",:shrug:
+"whistle,whistles,whistling,whistled,pout,pouting,pouts,pouted",:person_pouting:
+"haircut,haircuts",:haircut:
+"massage,massages",:massage:
+"nail care,paint nails,pedicure,pedicures,manicures,manicure",:nail_care:
+"selfie,selfies",:selfie:
+"dancer,dance,dances,danced,dancers,dancing",:dancer:
+"wheelchair,wheelchairs,handicap,handicaped",:person_in_manual_wheelchair:
+"walk,walking,walked,walks,walker,walkers",:walking:
+"blind,blinded,blinding,can not see,blinds,probing cane,probing canes",:person_with_probing_cane:
+"kneel,kneeling,kneeled,kneels",:person_kneeling:
+"run,running,runners,runner,runs,ran,fast",:person_running:
+"stand,standing,stands,stalker,stalkers,stalking,stalk,stalks",:person_standing:
+"hold hands,holding hands,holds hands,holded hands",:people_holding_hands:
+"relationship,relationships,couple,couples,dating",:couple_with_heart:
+"family,families",:family:
+"knot,knots,knotting,knotted",:knot:
+"yarn,yarns",:yarn:
+"thread,threads,threading,threaded",:thread:
+"needle,needles,sew,sews,sewing,sewed,sewing needle",:sewing_needle:
+"coat,coats,jacket,jackets,sweat shirt,sweat shirts",:coat:
+"shirt,shirts,t shirt",:shirt:
+"jeans,pants",:jeans:
+"briefs,underwear,underwears,boxers",:briefs:
+shorts,:shorts:
+"dress,dresses",:dress:
+"boots,boot",:boot:
+"shoe,shoes",:athletic_shoe:
+"socks,sock",:socks:
+"glove,gloves",:gloves:
+"scraf,scarves",:scarf:
+"hat,hats,cap,caps",:billed_cap:
+"helmet,helmets",:military_helmet:
+"crown,crowns,king,queen,kings,queens",:crown:
+"rings,ring,propose,proposes,proposed,proposing,married",:ring:
+"handbag,handbags,pouch,pouches,purse,purses,wallet,wallets",:handbag:
+"briefcase,briefcases",:briefcase:
+"backpack,backpacks,satchel,satchels,bag,bags",:school_satchel:
+"luggage,luggages",:luggage:
+"eyeglass,eyeglasses,glasses",:eyeglasses:
+"sunglasses,sunglass,shades",:dark_sunglasses:
+"umbrella,umbrellas",:umbrella:
+"dog,dogs,doggy,puppy,puppies",:dog:
+"cat,cats,kitten,kitten,kitties",:cat:
+"mouse,mice",:mouse:
+"hamster,hamsters",:hamster:
+"rabbit,rabbits",:rabbit:
+"fox,foxes,foxy",:fox:
+"bear,bears",:bear:
+"panda,pandas",:panda_face:
+"polar bear,polar bears",:polar_bear:
+"koala,koalas",:koala:
+"tiger,tigers",:tiger:
+"lion,lions",:lion:
+"cow,cows",:cow:
+"pig,pigs,piggy",:pig:
+"frog,frogs,froggy,toad,toads",:frog:
+"monkey,monkies,ape,apes",:monkey:
+"chicken,chickens,roaster,roasters,hen,hens",:chicken:
+"penguin,penguins",:penguin:
+"bird,birds,birdies",:bird:
+"chick,chicks",:hatching_chick:
+"duck,ducks",:duck:
+"eagle,eagles,bald eagle,bald ealges",:eagle:
+"owl,owls",:owl:
+"bat,bats",:bat:
+"wolf,wolfs,werewolf,werewolfs",:wolf:
+"boar,boars",:boar:
+"horse,horses,pony,ponies",:horse:
+"unicorn,unicorns",:unicorn:
+"bee,bees,wasp,wasps",:bee:
+"bug,bugs",:bug:
+"butterfly,buttflies",:butterfly:
+"snail,snails",:snail:
+"worm,worms",:worm:
+"lady bug,lady bugs",:lady_beetle:
+"ant,ants",:ant:
+fly,:fly:
+"mosquito,mosquitos",:mosquito:
+"cockroach,cockroaches",:cockroach:
+"beetle,beetles",:beetle:
+"cricket,crickets",:cricket:
+"spider,spiders",:spider:
+"web,webs",:spider_web:
+"scorpion,scorpions",:scorpion:
+"turtle,turtles",:turtle:
+"snake,snakes",:snake:
+"lizard,lizards",:lizard:
+t rex,:t_rex:
+"dinosaur,dinosaurs",:sauropod:
+"octopus,octopi",:octopus:
+"squid,squids",:squid:
+"shrimp,shrimps",:shrimp:
+"lobster,lobsters",:lobster:
+"crab,crabs",:crab:
+"fish,fishes",:fish:
+"seals,seal",:seal:
+"dolphin,dolphins",:dolphin:
+"whale,whales",:whale:
+"shark,sharks",:shark:
+"crocodile,crocodiles,alligator,alligators",:crocodile:
+"leopard,leopards",:leopard:
+"zebra,zebras",:zebra:
+"gorilla,gorillas",:gorilla:
+"orangutan,orangutans",:orangutan:
+"elephant,elephants",:elephant:
+"bison,bisons",:bison:
+"hippopotamus,hippo,hippos",:hippopotamus:
+"rhino,rhinos",:rhino:
+"camel,camels",:camel:
+"giraffe,giraffes",:giraffe:
+"kangaroo,kangaroos",:kangaroo:
+"ox,oxes",:ox:
+"ram,rams",:ram:
+"sheep,sheeps",:sheep:
+"llama,llamas",:llama:
+"goat,goats",:goat:
+deer,:deer:
+"feather,feathers",:feather:
+"turkey,turkies,thanksgiving,november",:turkey:
+"dodo,dodos",:dodo:
+"peacock,peacocks",:peacock:
+"parrot,parrots",:parrot:
+"swan,swans",:swan:
+"flamingo,flamingos",:flamingo:
+"dove,doves",:dove:
+"raccoon,raccoons",:raccoon:
+"skunk,skunks",:skunk:
+"badger,badgers",:badger:
+"beaver,beavers",:beaver:
+"otter,otters",:otter:
+"sloth,sloths,slow",:sloth:
+"rat,rats",:rat:
+"chipmunk,chipmunks,squirrel,squirrels",:chipmunk:
+"hedgehog,hedgehogs",:hedgehog:
+"paw print,paw prints,paw,paws",:feet:
+"dragon,dragons,mythical",:dragon:
+"cactus,cacti,cactuses",:cactus:
+"christmas tree,christmas trees,holiday,holidays",:christmas_tree:
+"tree,trees",:evergreen_tree:
+"seedling,seedlings",:seedling:
+"herb,herbs",:herb:
+"four leaf clover,clover,clovers",:four_leaf_clover:
+"bamboo,bamboos",:bamboo:
+"leaf,leaves",:leaves:
+fall,:fallen_leaf:
+"nest,nests",:nest_with_eggs:
+"mushroom,mushrooms",:mushroom:
+"shell,shells",:shell:
+"coral,corals",:coral:
+"rock,rocks",:rock:
+"wood,woods,woody,timber,lumber,timbers,lumbers",:wood:
+"bouqet,bouqets",:bouquet:
+"rose,roses,flower,flowers",:rose:
+"tulips,tulip",:tulip:
+lotus,:lotus:
+"blossom,blossomed,blossoms,blossoming",:blossom:
+"sunflower,sunflowers",:sunflower:
+"sun,summer,sunny,bright",:sun_with_face:
+"moon,night",:full_moon_with_face:
+crescent,:crescent_moon:
+"earth,americas",:earth_americas:
+africa,:earth_africa:
+asia,:earth_asia:
+"planet,planets,space,outspace,galaxy",:ringed_planet:
+"star,stars",:star2:
+"sparkle,sparkles,sparkling,sparkled",:sparkles:
+"zap,zaps,zapped,zapping,electric,electricity,shock,shocked,shocks,shocking",:zap:
+"comet,comets,astroid,astroids",:comet:
+"boom,explosion,explsions,bang,pop",:boom:
+"fire,flame,flames,fires,heat",:fire:
+"tornado,tornados",:cloud_tornado:
+"rainbow,rainbows",:rainbow:
+"cloud,clouds",:cloud:
+"rain,rained,raining,rains,rain cloud",:cloud_rain:
+"thunder,thunder storm,lightning,thundered,thundering,thunders,storms,storming,stormed",:thunder_cloud_rain:
+"snow,snowing,snowed,snows",:cloud_snow:
+"snowflake,snowflakes",:snowflake:
+"snowman,snowmans",:snowman2:
+"dash,dashes,wind,blow,blowing,blows,blowed,windy",:dash:
+"drops,droplet,droplets,splash,splashes",:sweat_drops:
+"ocean,oceans,water,wave,waves",:ocean:
+"fog,foggy",:fog:
+"apple,apples,fruit,fruits",:apple:
+"pear,pears",:pear:
+"tangerine,tangerines,orange,oranges",:tangerine:
+"lemon,lemons,sour",:lemon:
+"banana,bananas",:banana:
+"watermelon,watermelons",:watermelon:
+"grape,grapes",:grapes:
+"blueberries,berry,berries",:blueberries:
+"strawberry,strawberries",:strawberry:
+"melon,melons",:melon:
+"cherries,cherry",:cherries:
+"peach,peaches",:peach:
+"mangos,mango",:mango:
+"pineapple,pineapples",:pineapple:
+"coconut,coconuts",:coconut:
+"kiwi,kiwis",:kiwi:
+"tomato,tomatoes",:tomato:
+"eggplant,eggplants",:eggplant:
+"avocado,avocados,guacamole",:avocado:
+"olive,olives",:olive:
+broccoli,:broccoli:
+"lettuce,lettuces,cabbage,cabbages,kelp",:leafy_green:
+"bell pepper,bell peppers",:bell_pepper:
+"cucumber,cucumbers",:cucumber:
+"hot pepper,hot peppers,spicy",:hot_pepper:
+"corn,corn on the cobb,cobb",:corn:
+"carrot,carrots",:carrot:
+"garlic,garlics",:garlic:
+"onion,onions",:onion:
+"potato,potatoes",:potato:
+"sweet potato,sweet potatoes",:sweet_potato:
+"croissant,croissants",:croissant:
+"bagel,bagels",:bagel:
+"bread,breads,toast,toasted",:bread:
+"baguette,baguettes",:french_bread:
+"flatbread,flatbreads",:flatbread:
+"pretzel,pretzels",:pretzel:
+"cheese,cheeses",:cheese:
+"egg,eggs",:egg:
+"cooking,cooks,cook,cooked",:cooking:
+"butter,buttered,buttering",:butter:
+"pancake,pancakes,flapjacks,flapjack",:pancakes:
+"waffle,waffles",:waffle:
+bacon,:bacon:
+"steak,steaks,meat,meats",:cut_of_meat:
+"chicken leg,turkey leg",:poultry_leg:
+"ribs,baby back ribs,rib",:meat_on_bone:
+"bone,bones",:bone:
+"hotdog,hotdogs,sausage,sausages,weiner,weiners",:hotdog:
+"hamburger,hamburgers,cheeseburger,cheeseburgers,burger,burgers",:hamburger:
+"fries,french fry,fry,french fries",:fries:
+"pizza,food,foods",:pizza:
+"sandwich,sandwiches",:sandwich:
+falafel,:falafel:
+"taco,tacos",:taco:
+"burrito,burritos",:burrito:
+"salad,salads,healthy",:salad:
+"canned,canned food,can,can,canned foods",:canned_food:
+"jar,jars",:jar:
+spaghetti,:spaghetti:
+"ramen,noodle,noodles",:ramen:
+"stew,soup,soups",:stew:
+curry,:curry:
+sushi,:sushi:
+"dumpling,dumplings,wonton,wontons,potstickers,potsticker",:dumpling:
+"oyster,oysters",:oyster:
+rice,:rice:
+"fortune,fortune cookie",:fortune_cookie:
+"ice cream,ice creams,treat,treats",:icecream:
+"pie,pies",:pie:
+"cupcake,cupcakes",:cupcake:
+"cake,cakes,dessert,desserts",:cake:
+"birthday,birthdays",:birthday:
+"lollipop,lollipops",:lollipop:
+"candy,candies",:candy:
+"chocolate,chocolates",:chocolate_bar:
+"popcorn,movie,movies,snack,snacks",:popcorn:
+"doughnut,doughnuts,donut,donuts",:doughnut:
+"cookie,cookies",:cookie:
+"peanuts,peanut,nut,nuts",:peanuts:
+"bean,beans",:beans:
+honey,:honey_pot:
+milk,:milk:
+"pour,pours,poured,pouring,spill,spilling,spills,spilled",:pouring_liquid:
+"baby bottle,baby bottles",:baby_bottle:
+"coffee,caffine",:coffee:
+"tea,teas",:tea:
+"juice,juice box,juices,juice boxes",:beverage_box:
+"water,cup,cups,drink,drinks,straw,staws",:cup_with_straw:
+"bubble tea,boba",:bubble_tea:
+"beer,beers",:beer:
+"champagne,new years,clink,clinking,clinks,clinked",:champagne:
+"wine,wine glass,wine glasses",:wine_glass:
+"whisky,alcohol",:whisky:
+"cocktail,cocktails",:cocktail:
+tropical drink,:tropical_drink:
+ice,:ice_cube:
+"spoon,spoons",:spoon:
+"fork,forks",:fork_and_knife:
+"plate,plates,dinner,dinners,lunch,lunches,breakfast",:fork_knife_plate:
+"bowl,bowls,cereal",:bowl_with_spoon:
+"takeout,takeout box",:takeout_box:
+"chopstick,chopsticks",:chopsticks:
+"salt,salty,seasonings",:salt:
+"soccer,soccer balls,soccer ball",:soccer:
+"basketball,basketballs,ball,balls",:basketball:
+"football,footballs",:football:
+"baseball,baseballs",:baseball:
+"softball,softballs",:softball:
+"tennis,tennis balls,tennis ball",:tennis:
+"volleyball,volleyballs",:volleyball:
+rugby,:rugby_football:
+"disc,discs,frisbey,frisbies",:flying_disc:
+"8ball,8 ball,billards,billard",:8ball:
+"yo yo,yo yos",:yo_yo:
+"ping pong,table tennis,ping pongs",:ping_pong:
+badminton,:badminton:
+"hockey,hockey puck,hockey pucks,puck,pucks",:hockey:
+field hockey,:field_hockey:
+lacrosse,:lacrosse:
+"boomerang,boomerangs",:boomerang:
+"net,nets,goal,goals,score,scored,scores,scoring",:goal:
+"golf,golfs,golfed,golfing",:golf:
+"kite,kites",:kite:
+"playground,playgrounds,slides,slide,park,parks",:playground_slide:
+"archery,archer,archers,bow,bows,arrow,arrows,bow and arrow",:archery:
+"fishing,fishing pole,fishing poles,catch,caught,catches,catching",:fishing_pole_and_fish:
+"dive,diving,diver,scuba,scuba diver,divers,snorkel,snorkeling,snorkeled",:diving_mask:
+"boxing,boxes,box,boxed,fight,fighting,fights,fighted",:boxing_glove:
+"martial arts,karate",:martial_arts_uniform:
+"skateboard,skateboards,skateboarding,skateboarded",:skateboard:
+"roller skate,roller skates,roller blades,roller blade,skating,skates,skated,skate",:roller_skate:
+"sled,sleds,sleded,sleding",:sled:
+"ski,skiing,skied,skier,skiers",:skier:
+"snowboard,snowboards,snowboarded,snowboarding,snowboarder,snowboarders",:snowboarder:
+"parachute,parachutes",:parachute:
+"wrestle,wrestles,wrestled,wrestling,wrestler,wrestlers",:wrestling:
+"basketball player,bounce,bounce balls,bounce ball,basketball players",:basketball_player:
+"fencer,fencers,fence,fencing,fences,fenced",:fencer:
+"golfer,golfers",:golfer:
+"horse racing,race horse,race horses,horse races",:horse_racing:
+"meditate,meditating,meditates,meditated,calm,clear mind,calmed",:person_in_lotus_position:
+"surfer,surfers,surf,surfing,surfed,surfs",:surfer:
+"swim,swims,swam,swimming,swimmer,swimmers",:swimmer:
+"rowboat,rowboats,rowboated,rowboating,river,rivers",:rowboat:
+"climb,climbed,climbs,climbing,climber,climbers",:person_climbing:
+"bicyclist,bicyclists,bike,biking,biked,bikes",:bicyclist:
+"trophy,trophies,victory,winner,winners,victories",:trophy:
+"medal,medals",:medal:
+"ribbon,ribbons",:reminder_ribbon:
+"ticket,tickets,admission,admissions",:ticket:
+"juggle,juggles,juggled,juggling,juggler,jugglers",:juggler:
+"perform,performs,performing,performed,act,acting,acted,acts,fake,faking,faked,fakes",:performing_arts:
+"art,arts,crafts,paint,paints,painting,painted",:art:
+"microphone,sing,singing,sings,singed",:microphone:
+headphones,:headphones:
+piano,:musical_keyboard:
+"drum,drums,drumstick,drumsticks",:drum:
+"saxophone,jazz,saxophones",:saxophone:
+"trumpet,trumpets",:trumpet:
+"guitar,guitars,rock and roll,band,bands",:guitar:
+"banjo,banjos",:banjo:
+"violin,violins",:violin:
+"die,dice,roll,rolls",:game_die:
+"pawn,pawns,chess,strategy",:chess_pawn:
+"dart,darts",:dart:
+"bowling,bowling ball,pins,streak,spare",:bowling:
+"videogames,videogame,video game,video games,game,games",:video_game:
+"slots,slot,gamble,gambling,gambles,gambled,casino,poker",:slot_machine:
+"jigsaw,puzzle,puzzles",:jigsaw:
+"car,cars,drive,driving,drove,drives",:red_car:
+"taxi,taxis",:taxi:
+"truck,trucks",:pickup_truck:
+bus,:bus:
+"race car,race cars,racing,race,raced,races",:race_car:
+"police car,police cars",:police_car:
+"ambulance,ambulances,emergency,emergencies",:ambulance:
+"fire truck,fire trucks",:fire_engine:
+"tractor,tractors",:tractor:
+"scooter,scooters",:scooter:
+"motorcycle,motorcycles,motorcycling",:motorcycle:
+"wheel,wheels,tire,tires",:wheel:
+"train,trains",:steam_locomotive:
+"airplane,airplanes,travel,traveling,traveled,travels,fly,flying,flied",:airplane:
+"seat,sit,sitting,seated",:seat:
+"satellite,satellites",:satellite_orbital:
+"rocket,rockets",:rocket:
+"ufo,spaceship,spaceships,saucer,saucers",:flying_saucer:
+"helicopter,helicopters",:helicopter:
+"sailing,sail,sails,sailed",:sailboat:
+"boat,boats",:motorboat:
+"cruise,cruises,cruised,cruising",:cruise_ship:
+"ship,ships",:ship:
+"fuel,fueling,fueled,fuels,gas,pump,pumps,pumping,pumped",:fuelpump:
+"barrier,barriers,blocked,block,blocking,blocker,blocks,blockers",:construction:
+"map,maps,explore,explorer,adventure,adventures",:map:
+moyai,:moyai:
+"statue of liberty,statue,liberty",:statue_of_liberty:
+"castle,castles",:european_castle:
+"stadium,stadiums",:stadium:
+"ferris wheel,ferris wheels",:ferris_wheel:
+"roller coaster,roller coasters",:roller_coaster:
+"carousel,carousels,carnival,carnivals",:carousel_horse:
+"fountain,fountains",:fountain:
+"beach,beaches,sand,sandy",:beach:
+"island,islands,lost,stranded",:island:
+"desert,dry,deserts",:desert:
+"volcano,volcanos,erruption,erruptions,lava,magma",:volcano:
+"mountain,mountains",:mountain:
+"camp,camped,camps,camping,tent,tenting,tents,tented,wilderness,wild,outside",:camping:
+"inside,house,home,homes,houses,place,garden",:house_with_garden:
+"hut,huts",:hut:
+"factory,factories",:factory:
+"office,offices",:office:
+"store,stores,shop,shops,shopping,shopped",:department_store:
+"hospital,hospitals,er",:hospital:
+"bank,banks",:bank:
+"hotel,hotels",:hotel:
+"school,schools,elementary school,middle school,high school,college,university",:school:
+"wedding,weddings",:wedding:
+"church,churches",:church:
+"shrine,shrines",:shinto_shrine:
+"sunrise,sunrises",:sunrise:
+"firework,fireworks",:fireworks:
+"city,cities",:city_dusk:
+"milky way,universe",:milky_way:
+"bridge,bridges",:bridge_at_night:
+"watch,watches",:watch:
+"phone,cellphone,iphone,iphones,phones,cellphones,mobile,mobile phone,call,calling,called,calls",:iphone:
+"computer,computers,laptop,laptops",:computer:
+"keyboard,keyboards,type,typing,typed,types",:keyboard:
+"desktop,desktops,pc",:desktop:
+"printer,printers,print,printed,prints,printing",:printer:
+"click,clicks",:mouse_three_button:
+"joystick,joysticks",:joystick:
+"disk,disks,floppy,floppy disk",:floppy_disk:
+"cd,cds",:cd:
+"dvd,dvds",:dvd:
+"cameras,camera,picture",:camera:
+"video,videoed,videos,film,filming,filmed,films",:video_camera:
+"tv,television,televisions",:tv:
+"radio,radios",:radio:
+"compass,compasses,navigate,navigation,navigates",:compass:
+"stopwatch,stopwatches",:stopwatch:
+"timer,timed,timers",:timer:
+"alarm,alarms,clock,clocks,alarm clock,alarm clocks",:alarm_clock:
+"hourglass,hourglasses",:hourglass:
+"battery,charged,batteries,charging,chargers,charge",:battery:
+"plug,plugs,plugging,plugged",:electric_plug:
+"bulb,bulbs,light,lights,idea,ideas",:bulb:
+"flashlight,flashlights",:flashlight:
+"candle,candles",:candle:
+"fire extinguisher,fire extinguishers,extinguisher,extinguishers",:fire_extinguisher:
+"oil,oils",:oil:
+"dollar,dollars,money,cash,cashes,bills,currency",:dollar:
+"coin,coins,cents",:coin:
+"credit,credit card,credits,debt,debt card,credit cards,debt cards",:credit_card:
+"identification,identify,identifies,id,drivers lisence,lisences,lisence",:identification_card:
+"gem,gems,diamond,diamonds,jewels,jewel",:gem:
+"scale,scales,weight,weights,justice,balance,balanced,fair,equal",:scales:
+"ladder,ladders",:ladder:
+"screwdiver,screwdrivers,tool,tools",:screwdriver:
+"wrench,wrenches",:wrench:
+"hammer,hammers,hammered,hammering",:hammer:
+"pickaxe,pick,mine,mining,mines",:pick:
+"saw,saws,carpentry",:carpentry_saw:
+"screws,bolt,bolts,screw",:nut_and_bolt:
+"gear,gears",:gear:
+"mouse trap,trap,traps,mouse traps",:mouse_trap:
+"bricks,brick",:bricks:
+"chain,chains",:chains:
+"magnet,magnetic,magnets",:magnet:
+"gun,guns,shoot,shoots,shooting,shot",:gun:
+"bomb,bombs,explosive,exploded,bombed,bombing,blew up",:bomb:
+"axe,axes,axed",:axe:
+"knife,knifes,knifed,knifing",:knife:
+"sword,swords",:crossed_swords:
+"shield,shielded,shields,protected,protection,protect,protecting",:shield:
+"smoke,smoking,smokes,smoked",:smoking:
+"coffin,coffins",:coffin:
+"headstone,headstones,grave,graves,graveyard,graveyards",:headstone:
+"urn,urns,ashes",:urn:
+"crystal,crystals,crystal ball,crystal balls",:crystal_ball:
+"barber,barbers",:barber:
+"telescope,telescopes",:telescope:
+"microscope,microscopes",:microscope:
+"hole,holes",:hole:
+"x ray,x rays",:x_ray:
+"adhesive,bandage,bandages",:adhesive_bandage:
+"pill,pills",:pill:
+"syringe,syringes,vaccine,vaccinations,vaccines,vaccination",:syringe:
+"blood,bloods,bloody",:drop_of_blood:
+dna,:dna:
+"microbe,microbes,germ,germs,bacteria",:microbe:
+"thermometer,thermometers,temperature,temperatures",:thermometer:
+"broom,brooms,clean,cleans,cleaned,cleaning",:broom:
+"plunger,plungers,clog,clogged",:plunger:
+"toilet paper,toilet papers",:roll_of_paper:
+"toilet,toilets,bathroom,bathrooms",:toilet:
+"shower,showers,bath,baths",:shower:
+"soap,soaps",:soap:
+"toothbrush,toothbrushes",:toothbrush:
+"razor,razors,shave,shaved,shaves,shaving",:razor:
+"bellhop,bellhops,bell,bells",:bellhop:
+"key,keys",:key:
+"couch,couches",:couch:
+"bed,beds,sleep,sleeps,slept,sleeping",:bed:
+"gift,gifts,present,presents",:gift:
+"balloon,balloons",:balloon:
+"tada,celebration,celebrate,celebrates,surprise,surprises,surprised,surprised",:tada:
+"envelope,letters,envelopes",:envelope:
+"package,packages,packaged,packaging",:package:
+"mail,mailed,mailing,mailbox,mailboxes",:mailbox_with_mail:
+"receipt,receipts",:receipt:
+"chart,charts",:bar_chart:
+"stock,stocks",:chart_with_upwards_trend:
+"calendar,calendars,date,dates,day,days,month,months,year,years",:calendar:
+"wastebasket,wastebaskets,trashcan,trashcans,trash,trashed",:wastebasket:
+"file,files,filing,filed",:dividers:
+"newspaper,news,newspapers,information,inform,informed,informing",:newspaper2:
+"notebook,notebooks",:notebook:
+"book,books,read,reading,reads,knowledge",:books:
+"link,links,linked,linking",:link:
+"paperclip,paperclips",:paperclip:
+"ruler,rulers,measure,measures,inch,inches,centimeters,centimeter",:straight_ruler:
+"math,calculate,calculations,calculation,calculated,calculates,calculating",:abacus:
+"scissors,scissor,cut,cuts,cutted,cutting",:scissors:
+"pen,pens,ballpoint,ballpoint pen,ballpoint pens",:pen_ballpoint:
+"paintbrush,paintbrushes",:paintbrush:
+"crayon,crayons",:crayon:
+"pencil,pencils",:pencil2:
+"lock,locks,locked,locking",:lock:
+"unlock,unlocks,unlocked,unlocking",:unlock:
+"heart,hearts,love,loved,loving,loves,lover,lovers",:heart:
+"broken heart,broken hearts,break up,dumped",:broken_heart:
+sos,:sos:
+"wrong,incorrect",:x:
+"stop,no entry,stopped,stopping",:no_entry:
+underage,:underage:
+"warn,warns,warned,warning,caution,cautious,cautioned",:warning:
+"recycle,recycled,recycles,recycling",:recycle:
+"right,correct",:white_check_mark:
+zero,:zero:
+one,:one:
+two,:two:
+three,:three:
+four,:four:
+five,:five:
+six,:six:
+seven,:seven:
+eight,:eight:
+nine,:nine:
+ten,:keycap_ten:
+"number,numbered,numbers,numbering",:1234:
+"music,musical",:musical_note:
+"mute,muted",:mute:
+"sound,sounds",:sound:
+"thought,think,thinking,dream,dreaming,dreamed,dreams",:thought_balloon:
+"joker,jokers",:black_joker:
+female,:female_sign:
+male,:male_sign:
+"flag,flags",:flag_white:
+"red flag,red flags",:triangular_flag_on_post:
+"pride,gay",:rainbow_flag:
+"pirate,pirates",:pirate_flag:
+"mexico,mexican",:flag_mx:
+"canada,canadian",:flag_ca:
+"america,american,united states",:flag_us:
