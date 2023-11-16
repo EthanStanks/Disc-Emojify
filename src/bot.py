@@ -101,7 +101,6 @@ async def on_message(message):
                     await message.add_reaction(mapping.get_emoji((':x:')))            
     await bot.process_commands(message)
 
-
 @bot.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
