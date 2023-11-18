@@ -14,20 +14,15 @@ nltk.download('stopwords')
 from nltk.corpus import stopwords
 import re
 from sklearn.metrics import mean_absolute_error
-from keras.layers import Dropout, Dense
+from keras.layers import Dense
 from keras.optimizers import Adam
 from wordcloud import WordCloud
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import precision_score, recall_score, f1_score
 
 IS_GRAPHING = False
 IS_PRINTING = False
 EMBEDDING_DIM = 2000
 NUM_EPOCHS = 20
 BATCH_SIZE = 25
-#LEARNING_RATE = 0.001
-#DROPOUT = 0.7
-#RECURRENT_DROPOUT = 0.5
 
 SKIP_WORDS = set(stopwords.words('english'))
 SKIP_WORDS = SKIP_WORDS.union(['went','got','want','get',',','?','!','@','#','$','%','^','&','*','(',')','/','.',
@@ -89,13 +84,10 @@ def Train(padded_sequences, emoji_labels, unique_emojis, tokenizer, sequence_len
 
     model = Sequential()
     model.add(Embedding(input_dim=len(tokenizer.word_index) + 1, output_dim=EMBEDDING_DIM, input_length=sequence_length))
-    #model.add(Dropout(DROPOUT))
     model.add(LSTM(128, return_sequences=True))
-    #model.add(Dropout(DROPOUT))
     model.add(LSTM(56))
     model.add(Dense(len(unique_emojis), activation='softmax'))
 
-    #optimizer=Adam(learning_rate=LEARNING_RATE)
     optimizer=Adam()
     model.compile(loss='categorical_crossentropy', optimizer=optimizer, metrics=['acc'])
     fit = model.fit(X_train, y_train, epochs=NUM_EPOCHS, batch_size=BATCH_SIZE, validation_data=(X_test, y_test))

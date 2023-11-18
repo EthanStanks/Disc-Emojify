@@ -10,7 +10,7 @@ emojify,fit = model.Train(padded_sequences, emoji_labels, unique_emojis, tokeniz
 BOT_KEY = 'bot_key'
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 listening_channels = {}
-listen_mode = 0 # 0 = none, 1 = respond, 2 = inject, 3 = react
+listen_mode = 0
 
 @bot.event
 async def on_ready():
